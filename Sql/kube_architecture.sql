@@ -1,0 +1,15 @@
+create table if not exists kube_architecture(
+arch_id Integer not null,
+client_server varchar(255) null,
+cluster_based char null,
+master_node_id Integer null,
+worker_nodes varchar(255) null,
+api_server varchar(255) null,
+controller Integer null,
+manager_code Integer null,
+scheduler varchar(255) null,
+stage_storage Integer null,
+build_image varchar(255) null,
+status varchar(255) null,
+docker_container_artifact_url varchar(255) null,
+constraint kube_architecture_pk primary key(arch_id));

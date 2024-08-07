@@ -1,0 +1,16 @@
+create table if not exists kube_installation(
+unix_box_id Integer not null,
+on_demand_host_code Integer null,
+play_witj_k8s varchar(255) null,
+mini_kube varchar(255) null,
+kube_admin varchar(255) null,
+ec2_instance varchar(255) null,
+ec2_status char null,
+security_group_code varchar(255) null,
+kube_master_node varchar(255) null,
+worker_node_state varchar(255) null,
+network_installation_state varchar(255) null,
+kube_proxy_state varchar(255) null,
+mod_probe varchar(255) null,
+ip_forward_capability varchar(255) null,
+constraint kube_installation_pk primary key(unix_box_id));
